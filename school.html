@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="finanse.html">
+    <link rel="stylesheet" href="school.css">
+    <link rel="stylesheet" href="redactor.html">
+    <title>Student</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__menu">
+            <div class="menu__student">
+                <button class="button__menu">
+                    <a href="#"><h2 class="button__text">Допомога школяреві</h2></a>
+                </button>
+            </div>
+
+            <div class="menu__finance">
+                <button class="button__menu">
+                    <a href="finanse.html"><h2 class="button__text">Допомога фінансисту</h2></a>
+                </button>
+            </div>
+
+            <div class="menu__redactor">
+                <button class="button__menu">
+                    <a href="redactor.html"><h2 class="button__text">Допомога редактору</h2></a>
+                </button>
+            </div>
+
+            <div class="menu__img" onmouseout="hideInfo()" onmouseover="showInfo()">
+                <div class="img__text" id="hidden">Вітаю!</div>
+            </div>
+    </header>
+
+    <section class="section__relise">
+        <div class="input">
+            <input type="number" id="num1" class="input__num">
+            <input type="number" id="num2" class="input__num">
+        </div>
+
+        <input type="button" class="button__button" value="Обрахувати">
+
+        <div class="output">
+            <h2 class="output__num" id="res1"></h2>
+            <h2 class="output__num" id="res2"></h2>
+        </div>
+    </section>
+
+    <script src="logo.js"></script>
+    <script src="school.js"></script>
+</body>
+</html>
